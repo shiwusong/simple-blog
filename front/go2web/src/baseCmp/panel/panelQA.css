@@ -1,0 +1,78 @@
+/* 基础样式 */
+.header{
+  width: 100%;
+  color: #555;
+  padding-left: 15px;
+  padding-right: 10px;
+  height:44px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  cursor: pointer;
+}
+.header .time{
+  /* border:'0px',float:'left',height:'100%',lineHeight:'42px',fontSize:'15px' */
+  border: 0px;
+  float: left;
+  height: 100%;
+  line-height: 42px;
+  font-size: 15px;
+}
+.header .title{
+  /* border:'0px',float:'left',height:'100%',lineHeight:'42px',fontSize:'15px' */
+  border: 0px;
+  float: left;
+  height: 100%;
+  line-height: 42px;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  margin-left: 10px;
+}
+.body{
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  border-top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  overflow: hidden;
+}
+.leftNavImg{
+  float:left;
+  margin:15px 4px 0px 0px;
+  height: 15px;
+  width: 15px;
+}
+
+.rightNavImg{
+  float:right;
+  margin:12px 0px 0px 0px;
+  height: 18px;
+  width: 18px;
+}
+.hide{
+  display: none;
+}
+
+/* 每个body的样式 */
+.body .userImg{
+  height: 28px;
+  width: 28px;
+}
+
+
+.body .left{
+  float: left;
+}
+
+.addA{
+  margin-left: 20px;
+  font-size: 15px;
+  color: white;
+  background-color: #5cb85c;
+  outline: none;
+  border:1px solid #4cae4c;
+  border-radius: 5px;
+  cursor: pointer;
+}

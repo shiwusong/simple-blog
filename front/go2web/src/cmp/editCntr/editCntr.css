@@ -1,0 +1,21 @@
+.wrap{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.btn{
+  outline: none;
+  border: 1px solid #ddd;
+  background-color: rgb(249, 249, 249);
+  margin:0px 10px 0px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding:5px 10px 5px 8px;
+}
+.btn:hover{
+  background-color: #1890ff;
+  border: 1px solid #1d7cd4;
+  color: white;
+}
+.col{
+  padding: 10px;
+}

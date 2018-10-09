@@ -1,0 +1,16 @@
+.hide{
+  display: none;
+}
+
+.filewrap {
+  margin: 8px;
+  padding: 8px;
+  border:1px solid #46a3FF;
+  background-color: #2894ff;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+.filewrap:hover {
+  background-color: #0080ff;
+}

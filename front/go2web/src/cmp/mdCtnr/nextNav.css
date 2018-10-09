@@ -1,0 +1,24 @@
+.wrap{
+  /* width:'100%',margin:'15px 0px 15px 0px',fontSize:'15px',color:'#555' */
+  width: 100%;
+  margin: 15px 0px 15px 0px;
+  font-size: 15px;
+  color: #555;
+}
+.left{
+  float: left;
+  color: #777;
+}
+.left:hover{
+  color: rgb(52, 50, 65);
+}
+.right{
+  float: right;
+  color: #777;
+}
+.right:hover{
+  color: rgb(52, 50, 65);
+}
+.hide {
+  display: none;
+}

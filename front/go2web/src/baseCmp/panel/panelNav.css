@@ -1,0 +1,39 @@
+/* 基础样式 */
+.header{
+  width: 100%;
+  color: #555;
+  padding-left: 15px;
+  padding-right: 10px;
+  height:44px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.header .font{
+  /* border:'0px',float:'left',height:'100%',lineHeight:'42px',fontSize:'15px' */
+  border: 0px;
+  float: left;
+  height: 100%;
+  line-height: 42px;
+  font-size: 15px;
+}
+.body{
+  overflow: hidden;
+}
+.leftNavImg{
+  float:left;
+  margin:15px 4px 0px 0px;
+  height: 15px;
+  width: 15px;
+}
+
+.rightNavImg{
+  float:right;
+  margin:12px 0px 0px 0px;
+  height: 18px;
+  width: 18px;
+}
+.hide{
+  display: none;
+}
+
+/* 每个url的样式 */

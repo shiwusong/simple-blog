@@ -1,0 +1,27 @@
+.left{
+  float: left;
+}
+.row{
+  margin:30px 0px 30px 0px;
+}
+.row .userImg{
+  width: 28px;
+  height: 28px;
+}
+.row .time{
+  float: right;
+  color:gray;
+}
+.row .info{
+  padding: 10px;
+  margin-top:10px;
+  background-color: #f5f5f5;
+}
+.row .btn{
+  margin: 10px;
+  color:#46A3FF;
+  cursor: pointer;
+}
+.hide{
+  display: none;
+}

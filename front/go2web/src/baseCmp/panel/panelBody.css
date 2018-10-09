@@ -1,0 +1,75 @@
+/* 基础样式 */
+.header{
+  width: 100%;
+  color: #333;
+  padding-left: 10px;
+  padding-right: 10px;
+  height:44px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.body{
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  border-top: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 15px;
+  overflow: hidden;
+}
+.leftNavImg{
+  float:left;
+  margin:15px 4px 0px 0px;
+  height: 15px;
+  width: 15px;
+}
+
+.rightNavImg{
+  float:right;
+  margin:12px 0px 0px 0px;
+  height: 18px;
+  width: 18px;
+}
+.hide{
+  display: none;
+}
+
+/* 每个url的样式 */
+.nav{
+  width:280px;
+  height:150px;
+  margin:30px;
+  padding: 15px;
+  background-color: #d9edf7;
+  float: left;
+  border-radius: 18px;
+  position: relative;
+  color:#337ab7;
+  font-size: 15px;
+}
+.nav:hover{
+  background-color: #dff0d8; 
+  color:#1b5588; 
+}
+.nav img{
+  height: 32px;
+  width: 32px;
+}
+.nav .title{
+  color: rgba(0, 0, 0, 0.822);
+  font-weight: bold;
+  font-size: 16px;
+}
+.nav .num{
+  position: absolute;
+  top:120px;
+  left:250px;
+  color:#BC8F8F;
+  background-color: #F5F5DC;
+  min-width: 10px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-size: 12px;
+}

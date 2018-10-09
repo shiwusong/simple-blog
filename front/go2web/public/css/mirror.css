@@ -1,0 +1,13 @@
+/* 使编辑器高度自适应 */
+.mirror .CodeMirror {
+  min-height: 700px;
+
+  border: 1px solid #eee;
+  height: auto;
+}
+.mirror .CodeMirror-scroll {
+  min-height: 700px;
+  height: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
+}

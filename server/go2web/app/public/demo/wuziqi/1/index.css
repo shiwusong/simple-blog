@@ -1,0 +1,31 @@
+#qipan {
+  height: 640px;
+  width: 640px;
+  margin: 0 auto;
+  border:1px solid;
+  overflow: auto;
+}
+
+.qige {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border: 1px solid;
+  padding: 5px;
+  background-color: gray;
+}
+.qizi_white {
+  background-color: white;
+  border-radius: 50%;
+  height: 20px;
+  height: 20px;
+}
+.qizi_black {
+  background-color: black;
+  border-radius: 50%;
+  height: 20px;
+  height: 20px;
+}
+.clear {
+  clear: both;
+}
