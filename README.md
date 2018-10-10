@@ -27,7 +27,7 @@
 ## 一个超级复杂的使用教程（sad）
 1. clone项目，或者下载压缩包解压
 ```dos
-git clone https://github/shiwusong/simple-blog
+git clone https://github.com/shiwusong/simple-blog
 cd simple-blog
 ```
 2. 新建一个新的数据库go2web，运行当前simple-blog文件夹中的go2web.sql
