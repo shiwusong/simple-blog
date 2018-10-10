@@ -5,7 +5,7 @@ import IndexPage from '../cmp/index';
 export default class Root extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route exact path='/' component={IndexPage}/>
           <Route path='/index' component={IndexPage}/>
@@ -13,7 +13,7 @@ export default class Root extends Component {
           
           
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }

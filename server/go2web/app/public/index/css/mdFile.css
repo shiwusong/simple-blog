@@ -1,0 +1,30 @@
+.mdFile_wrap{
+  float:right;
+  width:400px;
+  margin: 10px;
+}
+.mdFile_wrap .h{
+  text-align: center;
+  margin: 0px;
+  font-weight: 1000;
+}
+.mdFile_wrap .hr{
+  border: 1px solid #c0c0c0;
+}
+.mdFile_wrap a{
+  color: #1296db;
+}
+.mdFile_wrap .span{
+  float: left;
+  width: 199px;
+  font-size:17px;
+  padding-left:10px;
+  line-height: 36px;
+}
+.mdFile_wrap .bb{
+  border-bottom:.5px solid;
+  height: 36px;
+}
+.mdFile_wrap .img{
+  height: 15px;
+}

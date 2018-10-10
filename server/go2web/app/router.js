@@ -5,8 +5,14 @@
  */
 module.exports = app => {
   const prefix = 'go2web';
+  const htmlPath = '/public/index/index.html';
   // require('./route/user')(app, prefix);
   const { router, controller } = app;
+
+  // 重定向
+  router.redirect('/', htmlPath);
+  router.redirect('/index', htmlPath);
+  router.redirect('/go2web', htmlPath);
 
   // user
   // 登陆

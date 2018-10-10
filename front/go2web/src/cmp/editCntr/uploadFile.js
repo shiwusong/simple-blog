@@ -53,7 +53,7 @@ export default class UploadFileCmp extends Component {
 `<div class="bb">
     <div class="span">
       <a href="${value.url}">
-      <img class="img" src="/images/下载.png" alt="上传"/>
+      <img class="img" src="./images/download.png" alt="下载"/>
         ${value.filename}
       </a>
     </div>

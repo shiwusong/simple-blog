@@ -89,7 +89,7 @@ export default class EditCntr extends Component {
           <button className={Style.btn} onClick={()=>{ this.setState({ fileModalVisible: true })}}>
             <Icon type="plus" theme="outlined" /> 文件</button>
           <button className={Style.btn} onClick={()=>{
-            const win = window.open('/index/tmd', '_blank');
+            const win = window.open('/public/index/index.html#/index/tmd', '_blank');
             win.focus();
           }} ><Icon type="login" theme="outlined" /> 预览</button>
 
