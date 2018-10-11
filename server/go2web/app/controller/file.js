@@ -21,7 +21,6 @@ class FileController extends Controller {
 
     // 开始保存图片
     const filePath = await ctx.service.file.upload(user, type);
-
     return this.SUCCESS({ filePath });
   }
 

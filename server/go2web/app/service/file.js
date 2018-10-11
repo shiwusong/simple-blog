@@ -1,6 +1,7 @@
 'use strict';
 
 const Service = require('../core/MYService');
+const path = require('path');
 
 class FileService extends Service {
 
@@ -21,21 +22,21 @@ class FileService extends Service {
     let filePath = '';
     // 判断文件类型
     if (type === FILE_TYPE_IMG) {
-      await ctx.helper.mkDir(`${uploadImgPath}\\${dirName}`);
+      await ctx.helper.mkDir(path.join(uploadImgPath, dirName));
       fileName = ctx.helper.dateFormat(new Date(), 'yyyyMMdd') + Math.floor((Math.random() + 1) * 1000) + (await ctx.helper.getFields(stream))._suffix;
-      filePath = `${uploadImgPath}\\${dirName}\\${fileName}`;
+      filePath = path.join(uploadImgPath, dirName, fileName);
     } else if (type === FILE_TYPE_FILE) {
-      await ctx.helper.mkDir(`${uploadFilePath}\\${dirName}`);
+      await ctx.helper.mkDir(path.join(uploadFilePath, dirName));
       fileName = (await ctx.helper.getFields(stream))._filename;
-      filePath = `${uploadFilePath}\\${dirName}\\${fileName}`;
+      filePath = path.join(uploadFilePath, dirName, fileName);
     } else if (type === FILE_TYPE_QAIMG) {
-      await ctx.helper.mkDir(`${uploadQAImgPath}\\${dirName}`);
+      await ctx.helper.mkDir(path.join(uploadQAImgPath, dirName));
       fileName = (await ctx.helper.getFields(stream))._filename;
-      filePath = `${uploadFilePath}\\${dirName}\\${fileName}`;
+      filePath = path.join(uploadFilePath, dirName, fileName);
     }
-
     // 保存文件
     try {
+      throw new Error('eee');
       await ctx.helper.save(stream, filePath);
     } catch (err) {
       this.ERROR(500, '保存文件出错！');
@@ -58,7 +59,7 @@ class FileService extends Service {
     dir = type === FILE_TYPE_IMG ? 'uploadImg' : dir;
     dir = type === FILE_TYPE_QAIMG ? 'uploadQAImg' : dir;
 
-    return `\\public\\${dir}\\${dirName}\\${fileName}`;
+    return path.join('/public', dir, dirName, fileName);
   }
 
   // 显示文件

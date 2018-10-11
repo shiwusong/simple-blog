@@ -29,7 +29,7 @@ export default class PanelBodyCmp extends Component {
       <div>
         {/* 头部内容 */}
         <div className={Style.header} style={{backgroundColor:headerColor}}>
-          <img className={Style.leftNavImg} src="/images/横排.png" alt=""/>
+          <img className={Style.leftNavImg} src="./images/横排.png" alt=""/>
           <div style={{border:'0px',float:'left',height:'100%',lineHeight:'42px',fontSize:'15px'}}>{title}</div>
           {/* <img className={Style.rightNavImg} src="./images/全屏.png" alt=""/> */}
         </div>

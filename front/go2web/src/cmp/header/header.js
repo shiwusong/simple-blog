@@ -197,7 +197,7 @@ class HeaderCmp extends Component {
     return (
       <div>
         <Row>
-          <img className={Style.logo} src="/images/logo.png" alt=""/>
+          <img className={Style.logo} src="./images/logo.png" alt=""/>
         </Row>
         <Row className={Style.nav}>
             <button onClick={this.url.bind(this,'/index')}>首页</button>

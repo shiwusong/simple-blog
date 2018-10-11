@@ -45,7 +45,7 @@ export default class OneACmp extends Component {
       <Row className={Style.row}>
           <Row>
             <div className={Style.left}>
-              <img className={Style.userImg} src="/images/user.png" alt=""/>{data.userName}
+              <img className={Style.userImg} src="./images/user.png" alt=""/>{data.userName}
             </div>
             <span className={Style.time}>回复时间：{data.createTime.substring(0,11)}</span>
           </Row>

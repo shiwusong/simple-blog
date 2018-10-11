@@ -27,15 +27,15 @@ export default class PanelQACmp extends Component {
             <Icon type="question-circle" style={{fontWeight:100,marginRight:5}} theme="filled" />
               {data.title}
           </span>
-          <img className={Style.rightNavImg} src={this.state.visible?"/images/最小化.png":"/images/全屏.png"} alt=""/>
-          {/* <img className={Style.rightNavImg} src="/images/最小化.png" alt=""/> */}
+          <img className={Style.rightNavImg} src={this.state.visible?"./images/最小化.png":"./images/全屏.png"} alt=""/>
+          {/* <img className={Style.rightNavImg} src="./images/最小化.png" alt=""/> */}
         </div>
         {/* 主体内容 */}
         <div className={[Style.body,this.state.visible?'':Style.hide].join(' ')}>
           {/* {React.Children.map(this.props.children,(child,i)=>{return child})} */}
 
           <Row style={{padding:15}}>
-            <div><img className={Style.userImg} src="/images/user.png" alt=""/><span>123123</span></div>
+            <div><img className={Style.userImg} src="./images/user.png" alt=""/><span>123123</span></div>
             <div style={{height:10}}/>
             <BodyCmp data={data}/>
             <ACmp data={data.answers}/>
