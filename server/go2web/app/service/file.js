@@ -36,7 +36,6 @@ class FileService extends Service {
     }
     // 保存文件
     try {
-      throw new Error('eee');
       await ctx.helper.save(stream, filePath);
     } catch (err) {
       this.ERROR(500, '保存文件出错！');

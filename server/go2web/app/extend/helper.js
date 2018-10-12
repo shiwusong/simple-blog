@@ -117,4 +117,17 @@ module.exports = {
     return fmt;
   },
 
+  mdDecoreate: html => {
+    const patt1 = /<(a[\s\S]*?)>[\s\S]*?<\/a>/g;
+    let r = patt1.exec(html);
+    while (r) {
+      let str = r[0];
+      const str1 = r[1];
+      str = str.replace(str1, str1 + ' target="_blank"');
+      html = html.replace(r[0], str);
+      r = patt1.exec(html);
+    }
+    return html;
+  },
+
 };

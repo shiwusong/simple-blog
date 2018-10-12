@@ -26,30 +26,30 @@ class MdService extends Service {
   }
 
   async saveTmd(user, md) {
-    const { app } = this;
+    const { app, ctx } = this;
     const tmd = await app.mysql.get('tmd', { userId: user.id });
     if (tmd == null) {
       const result = await app.mysql.insert('tmd', {
         userId: user.id,
         md,
-        html: marked(md),
+        html: ctx.helper.mdDecorate(marked(md)),
       });
       if (result.affectedRows !== 1) this.ERROR();
       return;
     }
     tmd.md = md;
-    tmd.html = marked(md);
+    tmd.html = ctx.helper.mdDecorate(marked(md));
     const result = await app.mysql.update('tmd', tmd);
     if (result.affectedRows !== 1) this.ERROR();
   }
 
   async saveMd(userId, catalogId, md, title, index) {
-    const { app } = this;
+    const { app, ctx } = this;
     const result = await app.mysql.insert('md', {
       userId,
       catalogId,
       md,
-      html: marked(md),
+      html: ctx.helper.mdDecorate(marked(md)),
       title,
       index,
     });

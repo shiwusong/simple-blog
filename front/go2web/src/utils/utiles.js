@@ -216,6 +216,19 @@ let Utils = ()=>{
     //加载图片
     reader.readAsDataURL(file);
   }
+  func.mdDecorate = html => {
+    const patt1 = /<(a[\s\S]*?)>[\s\S]*?<\/a>/g;
+    let r = patt1.exec(html);
+    while (r) {
+      console.log(r);
+      
+      let str = r[0], str1 = r[1];
+      str = str.replace(str1, str1 + ' target="_blank"');
+      html = html.replace(r[0], str);
+      r = patt1.exec(html);
+    }
+    return html;
+  }
 
   return {
     func

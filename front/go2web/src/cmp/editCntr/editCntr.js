@@ -51,7 +51,7 @@ export default class EditCntr extends Component {
           this.setState({
             mdStr: res.data.md,
             _mdStr: res.data.md,
-            htmlStr: marked(res.data.md),
+            htmlStr: Utils.mdDecorate(marked(res.data.md)),
           })
         }
         
@@ -113,7 +113,7 @@ export default class EditCntr extends Component {
               onChange={(editor, data, value) => {
                 this.setState({
                   mdStr: value,
-                  htmlStr:marked(value)
+                  htmlStr:Utils.mdDecorate(marked(value))
                 })
               }}
             />
